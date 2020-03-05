@@ -5,12 +5,14 @@ verify_ssl = true
 
 [dev-packages]
 autopep8 = "*"
-beautifulsoup4 = "*"
-requests = "*"
-peewee = "*"
 
 [packages]
 sandman2 = "*"
+psycopg2 = "*"
+python-slugify = "*"
+beautifulsoup4 = "*"
+requests = "*"
+peewee = "*"
 
 [requires]
 python_version = "3.6"

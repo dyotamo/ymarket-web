@@ -24,7 +24,6 @@ try:
                     'div', 'row-data contact-info homepage-contact-info').text
                 company.image = div.find('img', 'company-logo')['src']
             except (IndexError, AttributeError, TypeError,):
-                # Do nothing, just keep the field null
                 pass
 
             company.save()
