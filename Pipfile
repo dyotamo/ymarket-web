@@ -5,6 +5,7 @@ verify_ssl = true
 
 [dev-packages]
 autopep8 = "*"
+yapf = "*"
 
 [packages]
 sandman2 = "*"
@@ -13,6 +14,10 @@ python-slugify = "*"
 beautifulsoup4 = "*"
 requests = "*"
 peewee = "*"
+flask = "*"
+flask-cors = "*"
+gunicorn = "*"
+dsnparse = "*"
 
 [requires]
 python_version = "3.6"

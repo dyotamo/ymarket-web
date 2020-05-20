@@ -1,7 +1,11 @@
+from os import environ
+from dnsparse import parse
 from peewee import *
 
-db = PostgresqlDatabase('d5g1qf9obgq8n1', user='tbufeyofxqgkoj', password='c3db0dc459116a8ab04650fd8857c1814509f1013f8f8f7097309017f1459d50',
-                        host='ec2-18-215-99-63.compute-1.amazonaws.com', port=5432)
+url = parse(environ['DATABASE_URL'])
+
+db = PostgresqlDatabase(url.scheme, user=url.username=, password=url.password,
+                        host=url.host, port=url.port)
 
 
 class Company(Model):
