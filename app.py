@@ -2,7 +2,7 @@ from os import environ
 from sandman2 import get_app
 from flask_cors import CORS
 
-app = get_app('postgresql+psycopg2://' + environ['DATABASE_URL'])
+app = get_app(environ['DATABASE_URL'])
 cor = CORS()
 cor.init_app(app)
 
